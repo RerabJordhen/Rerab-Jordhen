@@ -1,0 +1,300 @@
+header {
+    height: 10vh;
+	background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
+
+}
+ul {
+    text-align: center;
+    margin-right: 2rem;
+}
+li {
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+li:hover,
+li:active {
+	color: #d5ff02;
+}
+
+#desuup{
+    height: 100%;
+    background-color: orange;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+      font-size: 40px;
+    color:black;
+    margin-left: 1%;
+}
+
+/* <h3> element in the left column for user's location */
+h3 {
+  color:#a2a9af; 
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+    
+}
+
+/* <h2> heading for "WHO AM I?" */
+h2#biography-heading {
+    margin-top: 0;
+}
+
+/* <h2> heading for "FAVOURITES IDENTIFIED" */
+h2#favourites-heading {
+    margin-top: 50px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    list-style-position: outside;
+    font-family: "Archivo", sans-serif;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+li {
+    font-size: 18px;
+    line-height: 2.2;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+span {
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+}
+
+/* <div> element that contains the profile image */
+div.profile-img-container {
+    overflow: hidden;
+   width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* profile image */
+div.profile-img-container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* <h2> element in the left column for user's name */
+div.info-container h2 {
+    text-align: center;
+}
+
+/* pseudo-element to add the location pin icon */
+h3#location::before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+    color: #000;
+    content: "\f3c5";
+}
+
+/* <div> that wraps around both the left and right columns */
+div.desuuo12 {
+    display: flex;
+}
+
+/* styling for both the left and right colunmns */
+div.flex-item {
+    background-color: #840303;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 3% 3% 3%;
+    margin: 10px;
+}
+
+/* <div> for the left column that contains the user's profile image */
+div.left-col {
+    flex-grow: 2;
+    text-align: center;
+}
+
+/* <div> for the right column that contains the "Who am I?" blurb and image gallery */
+div.right-col {
+    flex-grow: 3;
+}
+
+/* <div> element that wraps around the entire image gallery */
+div.gallery-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* <div> element that wraps each individual gallery image */
+
+   
+
+/* responsive layout for mobile view */
+@media (max-width: 575.98px) {
+    div.flex-wrapper {
+        flex-direction: column;
+    }
+    div.flex-item {
+        padding: 7%;
+    }
+    div.gallery-wrapper {
+        justify-content: center;
+    }
+    div.gallery-item {
+        width: 100%;
+        margin: 5px;
+    }
+    .gallery-item > img {
+        height: auto;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    ul {
+        text-align: center;
+    }
+}
+/* history */
+ #hsitory h1 {
+    text-align: center;
+    padding: 20px;
+       background-color: turquoise;
+       color:black;
+       border-radius: 10px;
+    width: 70%;
+    margin: 20px auto;
+   }
+    
+   section {
+    background-color:rgb(8, 138, 138);
+    padding-bottom: 20px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+   }
+   
+   section:hover {
+    transform: scale(1.05);
+   }
+   
+  #history h2 {
+    background-color: mediumseagreen;
+    color: black;
+    padding: 20px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   }
+     
+   h2::before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 15px;
+    margin-left: 15px;
+   }
+   
+   .icon1::before {
+    content: "\f4c4";
+   }
+   
+   .icon2::before {
+    content: "\f058";
+   }
+   
+   .icon3::before {
+    content: "\f057";
+   }
+   
+   .icon4::before {
+    content: "\f058";
+   }
+   
+   span {
+    text-decoration: underline;
+   }
+   
+   #history li {
+    margin: 20px 0;
+    font-family: "Cabin", sans-serif;
+    padding-right: 10px;
+   }
+   footer {
+    height: 10vh;
+    background: rgb(209, 133, 248);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .con {
+    font-family: 'Silkscreen', cursive;
+    width: 800px;
+/*     height: 800px; */
+    background-color: #0000ff;
+    color:white;
+    text-align: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 20px 20px 30px #888;
+    background-image: url("https://i.pinimg.com/originals/e3/bf/f2/e3bff2060ddc555c149b902ddf808ba8.png");
+}
+.top4{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.yeshi{
+    color: #ffffff;
+}
+body{
+    background-image: linear-gradient(white, yellow);
+}
+#main-con{
+    width: 100vw;
+    height: 700px;
+    
+}
